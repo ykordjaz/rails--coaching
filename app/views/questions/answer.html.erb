@@ -1,0 +1,18 @@
+<%# The answer.html.erb will display the question you ask your coach as well as his answer. %>
+<%# Add a link to /ask on the answer.html.erb view using the link_to Rails helper. %>
+<div class="question">
+<p>
+<%= params[:question] %>
+</p>
+
+<p>-You</p>
+</div>
+
+<div class="answer">
+<p>
+<%= @answer %>
+</p>
+<p>-Your coach</p>
+</div>
+
+<%= link_to "ask your coach another question", ask_path %>
